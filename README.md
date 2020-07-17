@@ -6,7 +6,7 @@ free click2call web integration with google recaptcha
 # What is this for ?
 
 click2call script allows your asterisk PBX to place a call between website visitor and your internal user (customer care /support etc.,)
-without any manual intervention .
+without any manual intervention . Using google reCaptcha to prevent click2call spam .
 
 
 
