@@ -25,7 +25,7 @@ This script has google invisible recaptcha to prevent spam. Change site-key and 
 
 Prerequisites :  
 
-# # ASTERISK
+## ASTERISK
 
 - You must have asterisk installed 
 
