@@ -34,6 +34,9 @@ Prerequisites :
 - You need a web server to host these files. click2call.html file can be hosted anywhere but click2call.php file
 should be hosted on asterisk server if you want to use CALLFILES method.
 
+# Need help ?
+
+- Write your comments and issues in issues section of this repository . Or you can mail at balusreekanthATgmailDOTcom
 
 3. Configuration Changes
 
