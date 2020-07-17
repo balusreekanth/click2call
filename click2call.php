@@ -146,7 +146,7 @@ $content .= "Set: phone={$phone}\n";
 echo file_put_contents($tmpfile, $content, FILE_TEXT | LOCK_EX);
 rename($tmpfile, $ast_out_dir . pathinfo($tmpfile, PATHINFO_BASENAME));
 
-//create a safe  context  in dialplan example:
+//create a safe  context  in dialplan for example:
 //[click2call]
 //exten => s,1,Dial(SIP/yourtrunk/${phone})
 echo "<br>";
