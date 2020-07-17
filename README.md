@@ -25,17 +25,17 @@ This script has google invisible recaptcha to prevent spam. Change site-key and 
 
 Prerequisites :  
 
-## ASTERISK
+###### **ASTERISK**
 
 - You must have asterisk installed 
 
-## WEB SERVER
+###### **WEB SERVER**
 
 - You need a web server to host these files. click2call.html file can be hosted anywhere but click2call.php file
 should be hosted on asterisk server if you want to use CALLFILES method.
 
 
-## Configuration Changes
+###### **Configuration Changes**
 
 - I am using google invisible recaptcha in this script, replace secret and site-key with your own .
 - Change constants to match with your configuration settings like AMI user name ,password ,port ,host ,destination extension etc., 
