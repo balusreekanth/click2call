@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Click to Call</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf0GLBZAAAAAJFykfGdZcRRfpM5FipMC6fCYfrf"></script>
+  </head>
+  <body>
+    <div>
+      <b>Enter your Number</b>
+    </div>
+
+    <form id="ccForm" action="click2call.php" method="post">
+      <div>
+
+        <div>
+        <!--change phone number pattern if you need-->
+         <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{10}"
+       required>
+
+      <small>Format: 0123456789</small>
+         </div>
+
+          <div>
+              <input type="submit" value="submit">
+          </div>
+      </div>
+    </form>
+
+    <script>
+    $('#ccForm').submit(function(event) {
+        event.preventDefault();
+        var phone = $('#phone').val();
+
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lf0GLBZAAAAAJFykfGdZcRRfpM5FipMC6fCYfrf', {action: 'cc_send'}).then(function(token) {
+                $('#ccForm').prepend('<input type="hidden" name="token" value="' + token + '">');
+                $('#ccForm').prepend('<input type="hidden" name="action" value="cc_send">');
+                $('#ccForm').unbind('submit').submit();
+            });;
+        });
+  });
+  </script>
+  </body>
+</html>
