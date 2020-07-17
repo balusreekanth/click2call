@@ -43,6 +43,8 @@ should be hosted on asterisk server if you want to use CALLFILES method.
 at any time.
 - If you choose to use AMI method and host all files on your remote website then make sure you open Asterisk manager interfacre port to your webserver IP.
 - If you  choose to use CALLFILES METHOD , then make sure script has write permissions  to asterisk outgoing directory .
+- Place ext_click2call.conf.  file in /etc/asterisk and replace with your outgoing trunk name
+
 
 # Need help ?
 
